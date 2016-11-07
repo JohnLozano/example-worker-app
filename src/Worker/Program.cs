@@ -17,7 +17,7 @@ namespace Worker
             try
             {
                 var pgsql = OpenDbConnection("Server=drDb;Username=postgres;");
-                var redis = OpenRedisConnection("redis").GetDatabase();
+                var redis = OpenRedisConnection("drRedis").GetDatabase();
 
                 var definition = new { vote = "", voter_id = "" };
                 while (true)
