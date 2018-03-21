@@ -14,7 +14,6 @@ namespace Worker
     {
         public static int Main(string[] args)
         {
-            // Some Code Change
             try
             {
                 var pgsql = OpenDbConnection("Server=postgres;Username=postgres;");
