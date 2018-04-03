@@ -16,6 +16,7 @@ namespace Worker
         {
             try
             {
+                //Add comment.
                 var pgsql = OpenDbConnection("Server=postgres;Username=postgres;");
                 var redisConn = OpenRedisConnection("redis");
                 var redis = redisConn.GetDatabase();
